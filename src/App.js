@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import CloudIcon from '@mui/icons-material/Cloud';
 import '../src/App.css'
 
 function App() {
-  const [temp, setTemp] = useState(0);
+  const [temp, setTemp] = useState(null);
   const [Country, setCountry] = useState('');
+  const [InvalidCity, setInvalidCity] = useState("");
+
+
 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (Country.trim() === '') {
-      alert('Please enter a valid Country name');
+      setInvalidCity("Please enter a valid Country or City")
       return;
+    } else {
+      setInvalidCity("");
     }
-
     const url = `http://api.weatherapi.com/v1/current.json?key=6ba551e0ee3a40229dd80510250801&q=${Country}&aqi=no`;
-
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -27,25 +31,45 @@ function App() {
       alert('Failed to fetch weather data. Please try again.');
     }
   };
-
   return (
     <div className="App">
-      <div className='' >
+      <div>
+        <div className='text-muted'>
+          <center className='mt-5'>
+            <h1>Weather App</h1>
+            <p >
+              <CloudIcon /> API by WeatherApi
+            </p>
+            <div>
+
+            </div>
+          </center>
+        </div>
         <form onSubmit={handleSubmit}>
           <input
             class="form-control mt-5 "
             type="text"
-            placeholder='Country'
+            placeholder='Country or city'
             value={Country}
             onChange={(e) => setCountry(e.target.value)} />
+          <center className='text text-danger'>
+            <p>{InvalidCity}</p>
+          </center>
           <div className='d-grid'>
             <button type="submit" className='btn btn-success w-full mt-3' >Get Weather</button>
           </div>
         </form>
-        <br />
-        <div>
-          <h2 className='text-muted'>Temperature: {temp} &#8451;</h2>
+        <div className="mt-3 text-muted">
+          {temp === null ? (
+            <div><p>Enter a valid Country or city to get the weather</p></div>
+          ) : (
+            <div><h2>Temperature: {temp} &#8451;</h2></div>
+          )}
         </div>
+      </div>
+
+      <div className='crdts text-muted'>
+        © Franco Gregorio 2023. All Rights reserved.
       </div>
     </div>
   );

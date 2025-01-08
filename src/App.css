@@ -2,3 +2,11 @@
   display: flex;
   justify-content: center;
 }
+
+.crdts{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  font-size:large;
+}
