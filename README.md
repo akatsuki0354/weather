@@ -2,10 +2,14 @@
 
 **"This is my example of fetching data. You can see the problem that I solved."**
 
-**Warning: This website is not finished yet.**
-
+***before***
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/Capture.PNG?alt=media&token=309b133d-314c-4848-a70f-56225a2ddd8e"  />
+</div>
+
+***after***
+<div align="center">
+  <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/done.PNG?alt=media&token=f57b54a7-37b1-4335-aba3-96208c122231"  />
 </div>
 
 ###
