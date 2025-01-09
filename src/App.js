@@ -19,7 +19,7 @@ function App() {
       setInvalidCity("");
     }
     const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=philippines&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${Country}&aqi=no`;
 
     try {
       const response = await fetch(url);
