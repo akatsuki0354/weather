@@ -18,7 +18,9 @@ function App() {
     } else {
       setInvalidCity("");
     }
-    const url = `http://api.weatherapi.com/v1/current.json?key=6ba551e0ee3a40229dd80510250801&q=${Country}&aqi=no`;
+    const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=philippines&aqi=no`;
+
     try {
       const response = await fetch(url);
       if (!response.ok) {
