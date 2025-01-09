@@ -21,14 +21,14 @@
 
 ###
 **step 2:**
-"I found a free alternative website that provides weather data. then I need to find a way to fetch the data from the website."
+"I found a free alternative website that provides weather data. then after i find the alternative website i explore it."
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/2atemp.png?alt=media&token=b9b2eba5-4805-4efc-b2ac-d9c363ed28f0"  />
 </div>
 
 ###
 
-**step 3:** "Then, after more research, I found a solution to fetch data in my own way." 
+**step 3:** "Then, after more research, I Learn how to fetch data i see in the console the forcast, current weather, and location etch." 
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/3atemp.png?alt=media&token=a582ecd9-671c-4a5c-9cf4-fd2dce683092"  />
 </div>
