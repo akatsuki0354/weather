@@ -2,10 +2,10 @@
 
 **"This is my example of fetching data. You can see the problem that I solved."**
 
-###tech I used:
-1. material UI
-2.bootstrap
-3.react
+### tech I used:
+- material UI
+- bootstrap
+- react
 
 
 ***before***
