@@ -1,6 +1,14 @@
-.App{
+.button{
   display: flex;
   justify-content: center;
+}
+
+.condtion_and_tem{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: wrap;
+    
 }
 
 .crdts{
@@ -9,4 +17,5 @@
   padding: 10px;
   text-align: center;
   font-size:large;
+  width: 100%;
 }
