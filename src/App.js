@@ -80,19 +80,18 @@ function App() {
   return (
     <div className="App text-white">
       <div>
-        <div className='pt-5 pb-5'>
+        <div className='container pt-5 pb-5'>
           <center>
             <h1 className='text-5xl mb-2 font-semibold'>Weather App</h1>
             <p >
               <CloudIcon /> API by WeatherApi
             </p>
-
           </center>
         </div>
         <div className='container'>
           <div className='lg:flex lg:justify-around'>
             <form onSubmit={handleSubmit}>
-              <center className='text text-danger'>
+              <center>
                 <div
                   class="mt-3 relative w-[480px] bg-gray-100 rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg"
                 >
@@ -120,13 +119,13 @@ function App() {
                     placeholder="Search A City or Country"
                   />
                   <button
-                    class="absolute right-1 top-1 bottom-1 px-6 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5044e4]"
+                    class="absolute right-1 top-1 bottom-1 px-6 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600"
                   type="submit"
                   >
                     Search Weather
                   </button>
                 </div>
-                <p>{Invalid_City}</p>
+                <p className='text-red-900/75 text-lg'>{Invalid_City}</p>
               </center>
               <div>
                 {max_temp === null ? (
