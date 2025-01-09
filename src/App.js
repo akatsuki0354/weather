@@ -39,7 +39,7 @@ function App() {
     } else {
       setInvalid_City("");
     }
-      const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+    const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${name}&days=1&aqi=no&alerts=no`;
 
 
@@ -78,8 +78,8 @@ function App() {
       .then(json => console.log(json))
   }, []);
   return (
-    <div className="App  bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
-      <div className='lg:h-screen'>
+    <div className="App text-white">
+      <div>
         <div className='pt-5 pb-5'>
           <center>
             <h1 className='text-5xl mb-2 font-semibold'>Weather App</h1>
@@ -93,25 +93,46 @@ function App() {
           <div className='lg:flex lg:justify-around'>
             <form onSubmit={handleSubmit}>
               <center className='text text-danger'>
-                <input
-                  class="form-control mt-3 lg:w-64 "
-                  type="text"
-                  placeholder='region or city'
-                  value={name}
-                  onChange={(e) => setname(e.target.value)} />
-
-
+                <div
+                  class="mt-3 relative w-[480px] bg-gray-100 rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
+                  >
+                    <svg
+                      class="h-5 w-5 text-gray-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                   value={name}
+                   onChange={(e) => setname(e.target.value)} 
+                    type="text"
+                    class="w-full pl-8 pr-24 py-3 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none"
+                    placeholder="Search A City or Country"
+                  />
+                  <button
+                    class="absolute right-1 top-1 bottom-1 px-6 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5044e4]"
+                  type="submit"
+                  >
+                    Search Weather
+                  </button>
+                </div>
                 <p>{Invalid_City}</p>
               </center>
-              <div className='button'>
-                <button type="submit" className='btn w-64 btn-success mt-2 ' >Get Weather</button>
-              </div>
-
               <div>
                 {max_temp === null ? (
                   <div> <center><p className='text-2xl font-semibold'></p></center></div>
                 ) : (
-                  <div className='text  text-lg'>
+                  <div className='text bg-gray-700/50 shadow-sm p-5 pt-3 rounded mt-5 text-lg'>
                     <center className='mt-3'>
                       <p className='text-3xl mb-3'><NightsStayIcon /> {moon_Phase}</p>
                       <p>{local_Time}</p>
@@ -140,7 +161,7 @@ function App() {
                 <div> <center><p className='text-2xl font-semibold'>WEATHER UPDATE</p></center></div>
               ) : (
 
-                <div>
+                <div className="mt-3 bg-gray-700/50 shadow-sm p-5 pt-3 rounded ">
                   <center>
                     <h4 className='md:text-xl lg:text-3xl text-lg mb-2'>{country}, {region}</h4>
                     <h1 className='md:text-2xl lg:text-4xl text-xl mb-2'> {temp} &#8451;</h1>
