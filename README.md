@@ -2,6 +2,12 @@
 
 **"This is my example of fetching data. You can see the problem that I solved."**
 
+###tech I used:
+1. material UI
+2.bootstrap
+3.react
+
+
 ***before***
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/Capture.PNG?alt=media&token=309b133d-314c-4848-a70f-56225a2ddd8e"  />
