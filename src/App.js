@@ -93,7 +93,7 @@ function App() {
             <form onSubmit={handleSubmit}>
               <center>
                 <div
-                  class="mt-3 relative w-[480px] bg-gray-100 rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg"
+                  class="mt-3 relative sm:w-[480px] w-[300px] bg-gray-100 rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg"
                 >
                   <div
                     class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
@@ -115,14 +115,14 @@ function App() {
                    value={name}
                    onChange={(e) => setname(e.target.value)} 
                     type="text"
-                    class="w-full pl-8 pr-24 py-3 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none"
+                    class="w-full pl-8 py-3  text-base text-gray-700 bg-transparent rounded-lg focus:outline-none"
                     placeholder="Search A City or Country"
                   />
                   <button
                     class="absolute right-1 top-1 bottom-1 px-6 bg-sky-600 hover:bg-sky-700 text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600"
                   type="submit"
                   >
-                    Search Weather
+                    Search
                   </button>
                 </div>
                 <p className='text-red-900/75 text-lg'>{Invalid_City}</p>
