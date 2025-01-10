@@ -1,6 +1,6 @@
 # Weather
 
-**"fetching data"**
+**fetching data**
 
 ### tech I used:
 - material UI
