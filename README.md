@@ -2,12 +2,6 @@
 
 **fetching data**
 
-### tech I used:
-- material UI
-- bootstrap
-- react
-
-
 ***before***
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/Capture.PNG?alt=media&token=309b133d-314c-4848-a70f-56225a2ddd8e"  />
@@ -40,4 +34,9 @@
 </div>
 
 ###
+
+### tech I used:
+- material UI
+- bootstrap
+- react
 
