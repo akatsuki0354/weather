@@ -35,7 +35,7 @@
 
 ###
 
-### tech I used:
+## Technologies
 - material UI
 - bootstrap
 - react
