@@ -1,18 +1,14 @@
 # Weather
 
-**fetching data**
+fetching data using WeatherApi
 
-***before***
-<div align="center">
-  <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/Capture.PNG?alt=media&token=309b133d-314c-4848-a70f-56225a2ddd8e"  />
-</div>
-
-***after***
+### Weather App UI
 <div align="center">
   <img height="200" src="https://firebasestorage.googleapis.com/v0/b/firetest-67b89.appspot.com/o/done.PNG?alt=media&token=f57b54a7-37b1-4335-aba3-96208c122231"  />
 </div>
 
-###
+
+### Problem and I Learned
 
 "I found a website that provides weather data, but here’s the problem I need to pay for the data. So, I have to find a free alternative."
 <div align="center">
