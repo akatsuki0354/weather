@@ -34,5 +34,6 @@ fetching data using WeatherApi
 ## Technologies
 - material UI
 - bootstrap
+- tailwind
 - react
 
