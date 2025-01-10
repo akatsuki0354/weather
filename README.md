@@ -1,6 +1,6 @@
 # Weather
 
-**"This is my example of fetching data. You can see the problem that I solved."**
+**"This is my example of fetching data"**
 
 ### tech I used:
 - material UI
